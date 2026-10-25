@@ -1,0 +1,20 @@
+SEO RESEARCH — 26 OCTOBER 2026
+Method: inspect public search results, official product terminology, actual client-supplied services, Google Search Central documentation and Cloudflare documentation. Priorities are relevance/intent recommendations, NOT measured search-volume or keyword-difficulty rankings.
+
+Primary keyword evidence:
+https://genqi.com/next-gen-genqi-inhaler/ — official GenQi product naming.
+https://genqi.com/ms/ — official Malay brand terminology.
+https://sites.google.com/view/srisari/kursus — training-provider terminology includes kursus mobile spa and personal 1-to-1 sessions. Reference for language/intent only; no claims or qualifications transferred to Farra.
+Client-supplied posters support kelas mobile spa, Hydrogen Experience Day, GenQi accessories and event cities. User confirms Farra/Akak Hydrogen, 10 years experience and WhatsApp number. Treat event dates as historical.
+
+Technical references:
+https://developers.google.com/search/docs/essentials
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide — standard SEO foundations; no special AI markup or llms.txt requirement.
+https://developers.google.com/search/updates — June 2026 removal of FAQ rich-result documentation; do not promise FAQ rich results.
+https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview
+https://support.google.com/webmasters/answer/9008080 — verify Domain property using the actual DNS TXT value supplied by Google.
+https://developers.cloudflare.com/workers/static-assets/binding/
+https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
+https://developers.cloudflare.com/workers/ci-cd/builds/
+
+Use Search Console query data after launch to revise priorities. Do not add a meta-keywords tag, doorway city pages, hidden keyword blocks, fake reviews or unproven disease-treatment claims. Future opportunities: genuine session photos, verified service area, original educational answers and confirmed upcoming events.

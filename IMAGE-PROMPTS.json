@@ -1,0 +1,46 @@
+{
+  "note": "Generated with the built-in image generation tool. The tool did not expose a model selector, so GPT-Image-2 could not be verified. Product and venue images are styled illustrations; Farra portrait used the supplied actual portrait as reference.",
+  "core": [
+    "Premium editorial photography for Farra Affandi's website. Deep midnight navy #071922, champagne gold light #D8B77D, realistic restrained luxury, natural depth and texture, no text, no logos, no watermark. Landscape 1536x1024 composition. Wide cinematic macro water surface with gentle concentric ripples, warm glints, a transparent spherical glass orb in lower-right, nearly black navy negative space across left and upper half for website headline, elegant luxury water campaign, low angle, sharp foreground and soft background. No product machines. Not a website screenshot: photograph only.",
+    "Premium editorial photography for Farra Affandi's website. Deep midnight navy #071922, champagne gold light #D8B77D, realistic restrained luxury, natural depth and texture, no text, no logos, no watermark. Landscape 1536x1024 composition. A refined private product demonstration setting: two clear glasses of water on a charcoal stone table, an open cream notebook with blank pages and simple brass pen, two comfortable chairs slightly out of focus in the background, soft warm daylight, no people, no product machines, no medical accessories. Welcoming, calm and professional. Wide eye-level close-up with generous negative space left.",
+    "Premium editorial photography for Farra Affandi's website. Deep midnight navy #071922, champagne gold light #D8B77D, realistic restrained luxury, natural depth and texture, no text, no logos, no watermark. Landscape 1536x1024 composition. An elegant small meeting room prepared for a business introduction: dark walnut round table, three cream notebooks and pens, empty warm upholstered chairs, subtle indoor greenery, floor-to-ceiling window with blurred Kuala Lumpur-style urban skyline without identifiable landmark, warm late-afternoon champagne light, dark navy shadows. No people, no graphs, no money, no trophies. Beautiful editorial angle from table height."
+  ],
+  "products": [
+    {
+      "name": "genqi",
+      "prompt": "Create a single premium editorial photographic asset for a dark navy and champagne personal wellness website. Landscape 1536x1024, navy #071922 background, subtle warm champagne rim lighting, charcoal stone surface, realistic proportion and material, elegant minimal styling. NO website UI, NO marketing text, NO health or income claims, NO unrelated devices. The supplied image is the identity reference for the actual GenQi / Hydromi inhaler hardware on its RIGHT side. Isolate and faithfully reproduce that exact unit: tall rounded white side panels, vertically ribbed black front, green narrow water-level window, dark oval top with circular black opening/control, in a natural three-quarter product angle. Keep existing accurate branding subtle, invent no logo. Show device only, no accessories, no people. Remove all poster graphics. Device shape/control locations must match reference.",
+      "ref": [
+        "C:\\Users\\user\\AppData\\Local\\Temp\\codex-clipboard-d072929d-056a-4aca-9a7e-7bff4aa0fd91.png"
+      ]
+    },
+    {
+      "name": "water",
+      "prompt": "Create a single premium editorial photographic asset for a dark navy and champagne personal wellness website. Landscape 1536x1024, navy #071922 background, subtle warm champagne rim lighting, charcoal stone surface, realistic proportion and material, elegant minimal styling. NO website UI, NO marketing text, NO health or income claims, NO unrelated devices. Use only the clear HYDROMI water bottle from the right side of the supplied poster as product reference. Faithfully preserve its long cylindrical transparent body, white top with GenQi marking, central diffuser stem, and shape. Place bottle upright with a clear glass of plain water beside it. Include subtle tubing only as shown. No inhaler unit, no goggles, no people. Remove all source poster graphics. Preserve product identity, no invented packaging.",
+      "ref": [
+        "C:\\Users\\user\\AppData\\Local\\Temp\\codex-clipboard-d072929d-056a-4aca-9a7e-7bff4aa0fd91.png"
+      ]
+    },
+    {
+      "name": "goggles",
+      "prompt": "Create a single premium editorial photographic asset for a dark navy and champagne personal wellness website. Landscape 1536x1024, navy #071922 background, subtle warm champagne rim lighting, charcoal stone surface, realistic proportion and material, elegant minimal styling. NO website UI, NO marketing text, NO health or income claims, NO unrelated devices. Use only the white hydrogen goggles at bottom right of the provided poster as product reference. Faithfully preserve the wide white goggle frame, transparent eye lenses and white flexible strap. Stage goggles with neatly curved clear tubing on charcoal stone in a careful three-quarter still-life view. No people, no eye close-up, no inhaler machine, no poster graphics, no text.",
+      "ref": [
+        "C:\\Users\\user\\AppData\\Local\\Temp\\codex-clipboard-d072929d-056a-4aca-9a7e-7bff4aa0fd91.png"
+      ]
+    },
+    {
+      "name": "spa",
+      "prompt": "Create a single premium editorial photographic asset for a dark navy and champagne personal wellness website. Landscape 1536x1024, navy #071922 background, subtle warm champagne rim lighting, charcoal stone surface, realistic proportion and material, elegant minimal styling. NO website UI, NO marketing text, NO health or income claims, NO unrelated devices. A beautifully prepared mobile facial coaching kit in a sophisticated treatment room: rolled ivory towels, simple ceramic mixing bowl, soft fan brush, tidy unbranded skincare containers, compact travel case, folded navy linen, a blank open learning notebook. Warm soft daylight, quiet premium spa feel, no people, no identifiable brand packaging, no certificates. No fake Elysyle labels. This is illustrative photography of training preparation."
+    },
+    {
+      "name": "checks",
+      "prompt": "Create a single premium editorial photographic asset for a dark navy and champagne personal wellness website. Landscape 1536x1024, navy #071922 background, subtle warm champagne rim lighting, charcoal stone surface, realistic proportion and material, elegant minimal styling. NO website UI, NO marketing text, NO health or income claims, NO unrelated devices. Two ordinary health screening instruments arranged on a clean tray: a digital upper-arm blood pressure monitor with neatly folded cuff and a small blood glucose meter with closed test-strip container. BOTH screens powered off blank dark screens; absolutely no readings or result numbers. No blood, no needles, no human hands, no patients. Photographic illustrative still life, not a medical outcome comparison."
+    },
+    {
+      "name": "farra",
+      "prompt": "Use case: identity-preserve photographic portrait edit. Use the supplied real photo of Farra as sole identity source. Preserve her exact facial features, eye color and shape, jaw, nose, lips, age, skin texture, black hijab with mauve undercap, brooch and grey outfit. Retain original near-front head angle and crossed arms. Only replace the peach backdrop with a softly blurred midnight navy and warm champagne interior, natural diffuse key light, subtle warm edge light, natural skin tone. Eye-level professional portrait, mid torso, generous background space, landscape 1536x1024 with subject on left two-thirds and quiet background right. No beautification, no generic replacement face, no text.",
+      "ref": [
+        "C:\\Users\\user\\Documents\\Codex\\2026-10-24\\can-x20\\work\\farra-actual-portrait.jpg"
+      ]
+    }
+  ]
+}

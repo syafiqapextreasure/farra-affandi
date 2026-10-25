@@ -1,0 +1,45 @@
+/* Compact language control shares the main header row at every viewport. */
+.header-inner{gap:20px}
+.header-inner>.brand{margin-right:auto}
+.language-switch{position:relative;flex:none;color:var(--cream);font-size:16px;line-height:1.4}
+.language-switch summary{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:8px 9px;cursor:pointer;list-style:none;border:1px solid var(--line);border-radius:24px;white-space:nowrap}
+.language-switch summary::-webkit-details-marker{display:none}
+.language-switch summary svg{width:20px;height:20px;color:var(--gold)}
+.language-chevron{font-size:16px;color:var(--gold)}
+.language-switch[open] summary,.language-switch summary:hover{border-color:var(--gold)}
+.language-options{position:absolute;right:0;top:calc(100% + 10px);min-width:185px;padding:6px;background:var(--deep);border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 30px #0006;z-index:30}
+.language-options a{display:flex;align-items:center;min-height:44px;padding:10px 14px;border-radius:4px;white-space:nowrap}
+.language-options a[aria-current=true]{background:rgba(216,183,125,.12);color:var(--gold);font-weight:600}
+.language-options a:hover{background:var(--panel)}
+.standalone-language{display:flex;justify-content:flex-end;padding:20px 5%}
+html{scroll-padding-top:115px}.archived-event{scroll-margin-top:125px}
+.header nav{top:100%;gap:18px}
+html[lang=ms-MY] .hero-content h1{font-size:clamp(48px,5.7vw,82px);line-height:1.1}
+html[lang=ms-MY] .hero-content{max-width:1220px}
+html[lang=ms-MY] .home-hero{min-height:820px}
+.button,.text-link{overflow-wrap:anywhere}
+@media(max-width:1390px){
+ .menu-toggle{display:flex;gap:12px;background:transparent;border:1px solid var(--line);color:var(--cream);padding:8px 13px;align-items:center;order:3}
+ .header nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--deep);padding:22px 6%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:6px;max-height:calc(100dvh - 100px);overflow-y:auto}
+ .header nav.is-open{display:flex}.header nav>a{font-size:20px;padding:12px 0}.header nav .nav-cta{padding:13px 18px;text-align:center;margin-top:8px}
+}
+@media(max-width:640px){
+ .header-inner{gap:8px;padding:14px 4%}
+ .header-inner .brand{flex-shrink:1;min-width:0;gap:9px}
+ .header-inner .brand strong{font-size:16px;letter-spacing:.08em}
+ .header-inner .brand small{display:none}
+ .header-inner .monogram{flex:none;width:32px}
+ .language-switch summary{gap:5px;padding:8px;min-width:76px}
+ .menu-toggle{font-size:0!important;padding:8px 10px;min-width:44px;min-height:44px;gap:0}
+ .menu-toggle span{font-size:22px;line-height:1}
+ html[lang=ms-MY] .hero-content h1{font-size:43px}
+ html[lang=ms-MY] .home-hero{min-height:850px}
+}
+
+.language-switch summary{height:44px;line-height:1;gap:8px;padding:0 12px}
+.language-switch summary>span{display:flex;align-items:center;font-size:16px;line-height:1;font-weight:600}
+.language-switch summary svg{display:block;flex:none;width:20px;height:20px}
+.language-switch summary svg.language-chevron{width:12px;height:12px;transition:transform .2s}
+.language-switch[open] .language-chevron{transform:rotate(180deg)}
+.quick-answer{border-top:1px solid var(--line)}
+@media(max-width:640px){.language-switch summary{gap:5px;padding:0 8px}}

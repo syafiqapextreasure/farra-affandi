@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import worker from './worker.mjs';
+const calls=[];
+const env={ASSETS:{fetch:async request=>{const path=new URL(request.url).pathname;calls.push(path);return new Response(path.includes('missing')?'missing':path,{status:path.includes('missing')?404:200,headers:{'Content-Type':'text/html'}})}}};
+const fetch=path=>worker.fetch(new Request(path),env);
+let r=await fetch('https://farraaffandi.com/');assert.equal(await r.text(),'/index.html');assert.equal(r.headers.get('X-Robots-Tag'),null);
+r=await fetch('https://farraaffandi.com/en/');assert.equal(await r.text(),'/en/index.html');
+r=await fetch('https://farraaffandi.com/en/index.html?interest=demo');assert.equal(r.status,301);assert.equal(r.headers.get('Location'),'https://farraaffandi.com/en/?interest=demo');
+r=await fetch('https://www.farraaffandi.com/services.html');assert.equal(r.headers.get('Location'),'https://farraaffandi.com/services.html');
+r=await fetch('https://farra-affandi.example.workers.dev/');assert.equal(r.headers.get('X-Robots-Tag'),'noindex, follow');
+r=await fetch('https://farraaffandi.com/en/missing');assert.equal(r.status,404);assert.equal(await r.text(),'/en/404.html');assert.equal(r.headers.get('X-Robots-Tag'),'noindex, follow');
+r=await fetch('https://farraaffandi.com/missing');assert.equal(r.status,404);
+r=await fetch('https://farraaffandi.com/sitemap.xml');assert.equal(await r.text(),'/sitemap.xml');
+console.log('PASS: Worker routing, canonical redirects, staging noindex, sitemap and bilingual 404 handling.');

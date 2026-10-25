@@ -1,0 +1,62 @@
+FARRA AFFANDI — WEBSITE HANDOVER
+Prepared 26 October 2026
+
+15 pages in the selected navy and champagne theme, plus a custom 404 page.
+Logo tagline: Wellness. Connection. Possibility.
+Homepage headline: Discover wellness. Explore possibility.
+
+OPEN THE WEBSITE
+Open dist/index.html in a browser. All navigation, images and enquiry preparation work from the local files. Copy-message support depends on browser permissions; the WhatsApp link is the fallback.
+For a local HTTP preview, run: node server.mjs
+Then open http://127.0.0.1:4173
+
+EDIT AND BUILD
+Edit page content in build.mjs; styles in dist/styles.css; behaviour in dist/app.js.
+Run node build.mjs after editing page content.
+Run node check.mjs for internal-link and asset checks.
+No dependency installation is required.
+The dist folder is the self-contained website for a conventional static web host.
+
+PAGES
+Home; Experiences; Hydrogen sessions; Mobile spa coaching; Products;
+GenQi Hydrogen Inhaler; Hydrogen water; Hydrogen goggles;
+Business opportunities; About Farra; Appointments & enquiries;
+FAQ; Hydrogen & the evidence; Privacy; Events & dates.
+
+CONTACT AND OFFERS
+WhatsApp: +60 12-275 4883 / 60122754883.
+The form prepares a message locally. It does not send, take payment, reserve a slot or store enquiries in a database.
+RM50 hydrogen trial and RM69 personal coaching are shown as advertised offers from the supplied posters. Current pricing, availability, duration, inclusions, travel and venue details are confirmed directly with Farra.
+10 years of experience is based on the client's statement.
+
+IMAGE ASSETS
+Nine generated visuals are in dist/assets. Product and service settings are illustrations, not photographs of a verified venue. The Farra portrait was generated using her actual portrait as reference; identity should receive a final client review before public launch.
+IMAGE-PROMPTS.json records the prompts. The image tool did not expose a model selector, so GPT-Image-2 could not be verified.
+
+VERIFICATION
+16 HTML documents, 439 internal file references: passed, no missing linked assets.
+JavaScript syntax: passed.
+Browser: desktop at 1440px and mobile at 390px; all 14 pages checked for horizontal overflow, one H1, and broken loaded images. Mobile menu and WhatsApp message preparation tested; no message sent.
+
+PUBLICATION STATUS
+The local website is complete. A private Sites project was registered, but source preparation was blocked by the environment: the publishing helper could not start Git (spawn EPERM). No deployment succeeded.
+The intended domain farraaffandi.com has not been connected or registered by this task.
+The .openai/hosting.json file retains the registered private Site identity for later publication.
+
+RESEARCH
+See RESEARCH-SOURCES.txt and the website's Hydrogen & the evidence page.
+
+READABILITY REVISION — 26 October 2026
+Regular copy is now 20px; hero supporting text is 22px on desktop. Buttons/navigation are 18px, supporting labels and fine print at least 16px. Logo tagline retains separate branding proportions. Increased text contrast. Both Farra portraits use a centered square CSS crop of the existing image without changing her face. All 14 mobile pages checked at 390px with no horizontal overflow. Facebook links now use the supplied business page. Events page and homepage archive added from three supplied August 2026 posters and the Penang reel. All three dates are past; future dates are enquiry-only until confirmed. Additional styles are in dist/readability.css.
+
+
+EVENTS REVISION
+Edit events.mjs for the archive and upcoming section. Original posters are in dist/assets/event-*.png. Dates: Penang 30 August 2026 (RM29), Melaka 22 August 2026 (RM59), Subang Jaya 15 August 2026 (RM29). Historical prices do not replace the RM50 personal trial. Penang registration 1:30pm verified in the linked reel. Main WhatsApp remains 012-275 4883; the Penang artwork's differing number is identified beside the archived image. Desktop/mobile event layouts, current contact links and poster expansion verified.
+
+BILINGUAL WEBSITE — 26 October 2026
+Bahasa Melayu is the default at dist/index.html. English is at dist/en/index.html. All 15 pages and the 404 page exist in both languages (32 HTML files). The visible language switch links to the equivalent page and preserves the current query and section. Internal navigation stays in the selected language. Both versions work without a translation API; no online translation service or browser storage is required.
+The BM tone is professional Malaysian conversational copy, retaining familiar terms such as wellness, coaching, appointment and booking. Brand/model names and original event posters remain as supplied. Event dates, page metadata, image descriptions, form labels and prepared WhatsApp messages are localized.
+For edits: English content is in build.mjs and events.mjs. Bahasa Melayu copy is in translations-ms.json, keyed by the original English text. localize.mjs writes both language versions and checks for missing Malay entries. Update the dictionary whenever source text changes, then run node build.mjs and node check.mjs. Shared language controls use dist/language.css. dist/app.js handles localized form messages and language-link context.
+Verification: 32 HTML files, 1,038 internal references; all links/assets resolved. Desktop 1440px and mobile 390px checked for all 32 files with no horizontal overflow. English/BM switching, preserved product selection, preserved event section and both WhatsApp message languages verified. No message was sent.
+
+Header refinement: language selection is now a compact globe + BM/EN dropdown in the main header row. Verified desktop (1440px) and mobile (390px/320px), language switching and mobile navigation. Bahasa Melayu remains the default.

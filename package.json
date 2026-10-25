@@ -1,0 +1,10 @@
+{
+ "name":"farra-affandi",
+ "version":"1.0.0",
+ "private":true,
+ "type":"module",
+ "engines":{"node":">=22"},
+ "scripts":{"build":"node build.mjs","start":"node server.mjs","dev":"wrangler dev","deploy":"wrangler deploy","check":"node check.mjs && node check-seo.mjs && node test-worker.mjs"},
+ "devDependencies":{"wrangler":"4.152.0"},
+ "overrides":{"undici":"7.30.1"}
+}
