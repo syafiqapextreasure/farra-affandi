@@ -60,3 +60,5 @@ For edits: English content is in build.mjs and events.mjs. Bahasa Melayu copy is
 Verification: 32 HTML files, 1,038 internal references; all links/assets resolved. Desktop 1440px and mobile 390px checked for all 32 files with no horizontal overflow. English/BM switching, preserved product selection, preserved event section and both WhatsApp message languages verified. No message was sent.
 
 Header refinement: language selection is now a compact globe + BM/EN dropdown in the main header row. Verified desktop (1440px) and mobile (390px/320px), language switching and mobile navigation. Bahasa Melayu remains the default.
+
+LATEST: Use npm start for previews. Navigation now uses clean root-relative URLs and requires the HTTP server. .html redirects are handled by the Cloudflare Worker.

@@ -1,4 +1,5 @@
 const productionHost = 'farraaffandi.com';
+const pages=new Set(['services','hydrogen-therapy','spa-coaching','products','genqi','hydrogen-water','hydrogen-goggles','opportunities','about','book','faq','insights','privacy','events']);
 export default {
  async fetch(request, env) {
   const url = new URL(request.url);
@@ -12,7 +13,16 @@ export default {
    return Response.redirect(url.href, 301);
   }
   const assetUrl = new URL(url);
+  if (/\.html$/.test(url.pathname)) {
+   url.pathname=url.pathname.replace(/\.html$/,'');
+   return Response.redirect(url.href,301);
+  }
+  if(url.pathname.endsWith('/') && url.pathname!=='/' && url.pathname!=='/en/'){
+   url.pathname=url.pathname.slice(0,-1);
+   return Response.redirect(url.href,301);
+  }
   if (assetUrl.pathname === '/' || assetUrl.pathname === '/en/') assetUrl.pathname += 'index.html';
+  else if(pages.has(assetUrl.pathname.replace(/^\/(en\/)?/,'')))assetUrl.pathname+='.html';
   let response = await env.ASSETS.fetch(new Request(assetUrl, request));
   if (response.status === 404 && url.pathname.startsWith('/en/')) {
    const errorUrl = new URL('/en/404.html', url);

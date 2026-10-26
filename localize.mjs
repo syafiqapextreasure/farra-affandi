@@ -43,7 +43,14 @@ function render(source,file,lang){
  html=html.replace('</head>',`<link rel="stylesheet" href="${prefix}language.css"><link rel="alternate" hreflang="ms" href="${lang==='en'?'../':''}${file}.html"><link rel="alternate" hreflang="en" href="${lang==='ms'?'en/':''}${file}.html"></head>`);
  if(html.includes('</header>'))html=html.replace('</nav></div></header>','</nav>'+languageBar(file,lang)+'</div></header>');
  else html=html.replace('<body>','<body><div class="standalone-language">'+languageBar(file,lang)+'</div>');
- return optimizePage(html,file,lang);
+ html=optimizePage(html,file,lang);
+ // Resolve links before removing file extensions so both language trees remain correct.
+ return html.replace(/(href|src)="([^"]+)"/g,(match,key,value)=>{
+  if(/^(https?:|tel:|mailto:|#|data:)/.test(value))return match;
+  const target=new URL(value,'https://farraaffandi.com/'+(lang==='en'?'en/':''));
+  target.pathname=target.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
+  return `${key}="${target.pathname}${target.search}${target.hash}"`;
+ });
 }
 export function emitLocales(source,file){
  mkdirSync('dist/en',{recursive:true});

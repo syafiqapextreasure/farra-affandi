@@ -12,3 +12,8 @@ r=await fetch('https://farraaffandi.com/en/missing');assert.equal(r.status,404);
 r=await fetch('https://farraaffandi.com/missing');assert.equal(r.status,404);
 r=await fetch('https://farraaffandi.com/sitemap.xml');assert.equal(await r.text(),'/sitemap.xml');
 console.log('PASS: Worker routing, canonical redirects, staging noindex, sitemap and bilingual 404 handling.');
+r=await fetch('https://farraaffandi.com/services.html?source=old');assert.equal(r.status,301);assert.equal(r.headers.get('Location'),'https://farraaffandi.com/services?source=old');
+r=await fetch('https://farraaffandi.com/services');assert.equal(await r.text(),'/services.html');
+r=await fetch('https://farraaffandi.com/en/services');assert.equal(await r.text(),'/en/services.html');
+r=await fetch('https://farraaffandi.com/services/');assert.equal(r.headers.get('Location'),'https://farraaffandi.com/services');
+console.log('PASS: clean bilingual routes and permanent legacy URL redirects.');

@@ -1,6 +1,6 @@
 import {writeFileSync} from 'node:fs';
 export const origin='https://farraaffandi.com';
-export const pageUrl=(file,lang)=>`${origin}/${lang==='en'?'en/':''}${file==='index'?'':file+'.html'}`;
+export const pageUrl=(file,lang)=>`${origin}/${lang==='en'?'en/':''}${file==='index'?'':file}`;
 const meta={
  index:['Terapi Hidrogen & Kelas Mobile Spa | Farra Affandi','Hydrogen Wellness & Mobile Spa Coaching | Farra Affandi','Kenali Farra Affandi, Akak Hydrogen: sesi wellness hidrogen, produk GenQi, kelas mobile spa dan peluang bisnes. Tanya slot melalui WhatsApp.','Meet Farra Affandi, Akak Hydrogen, for hydrogen wellness sessions, GenQi product enquiries, mobile spa coaching and business opportunities.'],
  services:['Sesi Terapi Hidrogen & Coaching Spa | Farra Affandi','Hydrogen Sessions & Spa Coaching | Farra Affandi','Teroka sesi wellness hidrogen dan coaching mobile spa bersama Farra. Semak pakej, harga semasa, lokasi dan slot sebelum buat booking.','Explore hydrogen wellness sessions and mobile spa coaching with Farra. Ask about packages, current prices, locations and appointment availability.'],
@@ -50,3 +50,4 @@ export function writeSearchFiles(){
  writeFileSync('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${entries.join('\n')}</urlset>\n`);
  writeFileSync('dist/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 }
+

@@ -43,3 +43,17 @@ html[lang=ms-MY] .home-hero{min-height:820px}
 .language-switch[open] .language-chevron{transform:rotate(180deg)}
 .quick-answer{border-top:1px solid var(--line)}
 @media(max-width:640px){.language-switch summary{gap:5px;padding:0 8px}}
+/* Shared atmospheric backgrounds and content-led responsive spacing. */
+.page-hero{position:relative;isolation:isolate;padding-top:56px;padding-bottom:48px}
+.page-hero:after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(7,25,34,.96),rgba(7,25,34,.82)),url('/assets/hero.png') center 62%/cover no-repeat;pointer-events:none}
+.page-hero h1{font-size:clamp(42px,4.5vw,66px);line-height:1.1}
+.page-hero.with-photo{gap:6%;align-items:center}
+.hero-photo img{height:440px;max-height:none}
+.section{padding-top:64px;padding-bottom:64px}
+.cta{background-image:linear-gradient(105deg,rgba(237,207,156,.97),rgba(245,223,184,.92) 55%,rgba(226,191,130,.55)),url('/assets/hero.png');background-position:center,center 78%;background-size:cover;color:var(--ink)}
+html[lang] .home-hero{height:auto;min-height:0}
+.hero-content{padding:64px 6% 100px}
+@media(min-width:1500px){.home-hero{padding-top:24px;padding-bottom:24px}}
+@media(max-width:1000px){.section{padding-top:48px;padding-bottom:48px}.page-hero{padding-top:44px;padding-bottom:36px}.page-hero h1{font-size:48px}.hero-photo img{height:360px}.hero-content{padding-top:48px;padding-bottom:90px}}
+@media(max-width:900px){.page-hero.with-photo{grid-template-columns:1fr;gap:32px}.hero-photo{margin:0}.hero-photo img{height:auto;aspect-ratio:16/9}.hero-photo.portrait-frame{max-width:520px;margin:auto}.page-hero .lead{max-width:700px}.story-split{gap:28px}.story-split>div:not(.portrait-frame){padding:25px 5% 25px 0}}
+@media(max-width:640px){.page-hero{padding:34px 6% 30px}.page-hero h1{font-size:42px}.hero-photo{margin-top:28px}.hero-photo img{aspect-ratio:4/3}.section{padding:38px 6%}.page-hero+.section{padding-top:32px}.hero-content{padding:38px 6% 80px}.hero-content h1,html[lang=ms-MY] .hero-content h1{font-size:42px}.hero-content .eyebrow{font-size:14px;margin-bottom:20px}.hero-content>p:not(.eyebrow){margin-bottom:24px}.scroll-hint{bottom:18px}.cta{padding:34px 6%;gap:18px}.story-split>div:not(.portrait-frame){padding:0 6% 32px}.footer{padding-top:32px}.quick-answer h2{font-size:34px}}

@@ -45,3 +45,6 @@ Commands: npm ci; npm run build; npm run check; npm start (simple preview); npm 
 Check scripts validate internal files, language controls, 30 canonicals, sitemap, JSON-LD, redirects, preview noindex and bilingual errors.
 On the local Windows task environment npm install scripts and Wrangler child processes were blocked by EPERM. Dependencies were installed with --ignore-scripts for checks; Cloudflare should run normal npm ci. Worker logic tests passed, but a full Wrangler dry run could not be completed locally. Confirm deployment in Cloudflare.
 Development dependency undici is overridden to patched 7.30.1; npm audit reports zero vulnerabilities for the lockfile at preparation time.
+
+CLEAN URL UPDATE — 26 October 2026
+Public URLs now use /services and /en/services (no .html). Old .html links redirect permanently. Canonicals, sitemap and navigation use clean URLs. Preview using npm start; opening the HTML files directly is no longer supported because links are root-relative. Responsive backgrounds and content-led spacing were checked across all 30 language pages at 320, 768 and 1440 pixels with no overflow or broken loaded images.
